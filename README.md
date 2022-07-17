@@ -1,7 +1,8 @@
 # terminal || jShell
 
-A project bootstrapped with create-vue-app, made in the style of a linux terminal.
+Still working, but you can see my progress <a href="https://jamesonarnett.github.io/terminal/">here!</a>
 
+A project bootstrapped with create-vue-app, made in the style of a linux terminal.
 
 ## Project setup
 
@@ -24,4 +25,5 @@ npm run build
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
