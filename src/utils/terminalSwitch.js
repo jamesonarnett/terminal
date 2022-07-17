@@ -9,6 +9,7 @@ import {
   whoami,
   whoareyou,
 } from "./commands";
+import { getQuote } from "../api/calls";
 
 // adds a new command to the commandOutput array
 const add = (cmd, arr) => {
@@ -17,7 +18,7 @@ const add = (cmd, arr) => {
   });
 };
 
-export const terminalSwitch = (input, arr) => {
+export const terminalSwitch = async (input, arr) => {
   switch (input) {
     case "banner":
       add(banner, arr);
@@ -35,7 +36,7 @@ export const terminalSwitch = (input, arr) => {
       add(social, arr);
       break;
     case "tuxsay":
-      add(tuxsay, arr);
+      arr.push(await getQuote());
       break;
     case "whoami":
       add(whoami, arr);

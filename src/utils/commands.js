@@ -26,7 +26,7 @@ export const help = [
   "<span class='text-colorWhite'>Available Commands: </span>",
   '<span class="text-colorWhite">banner</span> --->   <span class="text-color2">Display the banner</span>',
   '<span class="text-colorWhite">clear</span> --->    <span class="text-color2"> Clear the terminal</span>',
-  '<span class="text-colorWhite">email</span>--->     <span class="text-color2">Wanna Chat?</span>',
+  '<span class="text-colorWhite">email</span>    --->     <span class="text-color2">Wanna Chat?</span>',
   '<span class="text-colorWhite">help</span> --->     <span class="text-color2">You seem to understand this one</span>',
   '<span class="text-colorWhite">history</span> --->  <span class="text-color2">Previous Commands Executed</span>',
   '<span class="text-colorWhite">projects</span> ---> <span class="text-color2">My work!</span>',
@@ -78,3 +78,34 @@ export const whoareyou = [
   "<br>",
 ]
  
+
+
+//tux
+//                .88888888:.
+//               88888888.88888.
+//             .8888888888888888.
+//             888888888888888888
+//             88' _`88'_  `88888
+//             88 88 88 88  88888
+//             88_88_::_88_:88888
+//             88:::,::,:::::8888
+//             88`:::::::::'`8888
+//            .88  `::::'    8:88.
+//           8888            `8:888.
+//         .8888'             `888888.
+//        .8888:..  .::.  ...:'8888888:.
+//       .8888.'     :'     `'::`88:88888
+//       .8888        '         `.888:8888.
+//      888:8         .           888:88888
+//    .888:88        .:           888:88888:
+//    8888888.       ::           88:888888
+//    `.::.888.      ::          .88888888
+//   .::::::.888.    ::         :::`8888'.:.
+//   ::::::::::.888   '         .::::::::::::
+//  ::::::::::::.8    '      .:8::::::::::::.
+//  .::::::::::::::.        .:888:::::::::::::
+//  :::::::::::::::88:.__..:88888:::::::::::'
+//   `'.:::::::::::88888888888.88:::::::::'
+//        `':::_:' -- '' -'-' `':_::::'`
+
+
