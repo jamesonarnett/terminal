@@ -13,6 +13,6 @@ cd dist
 git checkout gh-pages
 git add -A
 git commit -m 'auto-deploy'
-git push
+git push origin gh-pages
 
 cd -
