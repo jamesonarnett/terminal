@@ -1,16 +1,24 @@
-# terminal
+# terminal || jShell
+
+A project bootstrapped with create-vue-app, made in the style of a linux terminal.
+
 
 ## Project setup
+
+Install:<br />
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+Dev:<br />
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+Build for prod:<br />
+
 ```
 npm run build
 ```

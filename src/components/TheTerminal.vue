@@ -1,6 +1,6 @@
 <template>
   <div class="terminal" @click="textFocus">
-    <div>
+    <div class="text-color1">
       <p v-html="command" v-for="command in commandOutput" :key="command"></p>
     </div>
     <textarea
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import * as commands from "../utils/commands.js";
+import { terminalSwitch } from "@/utils/terminalSwitch.js";
 
 export default {
   data() {
@@ -25,7 +25,6 @@ export default {
       commandOutput: [],
     };
   },
-  computed: {},
   methods: {
     textFocus() {
       this.$refs.textarea.focus();
@@ -34,29 +33,13 @@ export default {
       return String(this.input).toLowerCase().trim();
     },
     onEnter() {
-      switch (this.cleanInput()) {
-        case "clear":
-          this.commandOutput = [];
-          break;
-        case "banner":
-          commands.banner.forEach((line) => {
-            this.commandOutput.push(line);
-          });
-          break;
-        default:
-          commands.defaultCmd.forEach((line) => {
-            this.commandOutput.push(line);
-          });
-          this.input = "";
-          break;
-      }
-      this.input = "";
+    this.cleanInput() === 'clear' ? this.commandOutput = [] 
+    : terminalSwitch(this.cleanInput(), this.commandOutput);
+    this.input = "";
     },
   },
   mounted() {
-    commands.banner.forEach((line) => {
-      this.commandOutput.push(line);
-    });
+    terminalSwitch('banner', this.commandOutput);
   },
 };
 </script>
@@ -118,7 +101,7 @@ p {
   line-height: 1.3em;
   margin-top: -2px;
   animation: show 0.5s ease forwards;
-  animation-delay: 1.2s;
+  animation-delay: .5s;
   opacity: 0;
 }
 

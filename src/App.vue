@@ -24,16 +24,12 @@ body {
   font-family: "CascadiaCode", monospace;
   margin: 0;
   padding: 15px 20px;
-  min-height: 99%;
-  width: 100%;
-  min-width: 550px;
-  color: #795199;
+  color: #ffffff;
   background: #211d1b;
   overflow-x: hidden;
   width: 100vh;
   height: 100vh;
 }
-
 .text-color1 {
   color: #795199;
 }
@@ -43,9 +39,11 @@ body {
 }
 
 .text-colorHelp {
+  color: #795199;
+  text-shadow: 0 0 3px #795199;
 }
 
 .text-colorWhite {
-  color: rgb(221, 219, 219);
+  color: rgb(209, 209, 209);
 }
 </style>
