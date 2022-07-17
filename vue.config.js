@@ -1,8 +1,7 @@
-module.exports = {
-  publicPath: "/terminal/",
-};
+const { defineConfig } = require("@vue/cli-service");
 
-// const { defineConfig } = require("@vue/cli-service");
-// module.exports = defineConfig({
-//   transpileDependencies: true,
-// });
+module.exports = defineConfig({
+  publicPath: process.env.NODE_ENV === "production" ? "/terminal/" : "/",
+  outputDir: "docs",
+  transpileDependencies: true,
+});

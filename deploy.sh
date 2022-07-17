@@ -4,16 +4,10 @@
 set -e
 
 # build
+git checkout gh-pages
+
 npm run build
 
-# navigate into build output
-cd dist
-
-#git
-
-git checkout gh-pages
 git add -A
 git commit -m 'auto-deploy'
 git push origin gh-pages
-
-cd -
