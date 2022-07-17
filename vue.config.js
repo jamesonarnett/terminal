@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/terminal/" : "/",
+  publicPath: "/terminal/",
 };
 
 // const { defineConfig } = require("@vue/cli-service");

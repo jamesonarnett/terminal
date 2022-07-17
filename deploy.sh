@@ -10,6 +10,7 @@ npm run build
 cd dist
 
 #git
+
 git checkout gh-pages
 git add -A
 git commit -m 'auto-deploy'
