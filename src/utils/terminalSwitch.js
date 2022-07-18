@@ -11,6 +11,13 @@ import {
 } from "./commands";
 import { getQuote } from "../api/calls";
 
+const scrollPage = (arr) => {
+  console.log(arr.length);
+  if (arr.length > 20) {
+    window.scrollByLines(arr.length - 3);
+  }
+};
+
 // add the command to the commandsOutput array in TheTerminal.vue
 // for loop checks line[i] for spaces to make ascii art look correct
 // as long as the previous letter was not "n", so the <span> tags work
@@ -21,8 +28,8 @@ const add = (cmd, arr) => {
         line = line.slice(0, i) + "&nbsp;" + line.slice(i + 1);
       }
     }
-    console.log(line);
     arr.push(line);
+    scrollPage(arr);
   });
 };
 

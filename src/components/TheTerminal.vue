@@ -11,7 +11,9 @@
       autofocus
       @keyup.enter="onEnter"
     />
-    <div id="jShell">{{ input }}<b class="cursor" ref="cursor">█</b></div>
+    <div ref="jShell" id="jShell">
+      {{ input }}<b class="cursor" ref="cursor">█</b>
+    </div>
   </div>
 </template>
 
@@ -33,13 +35,17 @@ export default {
       return String(this.input).toLowerCase().trim();
     },
     onEnter() {
-    this.cleanInput() === 'clear' ? this.commandOutput = [] 
-    : terminalSwitch(this.cleanInput(), this.commandOutput);
-    this.input = "";
+      if (this.cleanInput() === "clear") {
+        window.scrollTo(0, 0);
+        this.commandOutput = [];
+      } else {
+        terminalSwitch(this.cleanInput(), this.commandOutput);
+      }
+      this.input = "";
     },
   },
   mounted() {
-    terminalSwitch('banner', this.commandOutput);
+    terminalSwitch("banner", this.commandOutput);
   },
 };
 </script>
@@ -101,7 +107,7 @@ p {
   line-height: 1.3em;
   margin-top: -2px;
   animation: show 0.5s ease forwards;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   opacity: 0;
 }
 
