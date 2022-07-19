@@ -19,14 +19,14 @@
 
 <script>
 import { terminalSwitch } from "@/utils/terminalSwitch.js";
-// import { saveHistory, executeCmd } from "@/utils/terminalMethods.js";
+import { saveHistory, executeCmd } from "@/utils/terminalMethods.js";
 
 export default {
   data() {
     return {
       input: "",
       commandOutput: [],
-      history: ["<span class='text-color2'>Previous Commands:</span>"],
+      history: ["<span class='text-color2'>Previous Commands:</span>", "<br>"],
     };
   },
   methods: {
