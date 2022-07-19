@@ -1,6 +1,7 @@
 import {
   banner,
   defaultCmd,
+  email,
   help,
   projects,
   secret,
@@ -12,7 +13,6 @@ import {
 import { getQuote } from "../api/calls";
 
 const scrollPage = (arr) => {
-  console.log(arr.length);
   if (arr.length > 20) {
     window.scrollByLines(arr.length - 3);
   }
@@ -24,10 +24,11 @@ const scrollPage = (arr) => {
 const add = (cmd, arr) => {
   cmd.forEach((line) => {
     for (let i = 0; i < line.length; i++) {
-      if (line[i] === " " && line[i - 1] !== "n") {
+      if (line[i] === " " && line[i - 1] !== "n" && line[i - 1] !== "a") {
         line = line.slice(0, i) + "&nbsp;" + line.slice(i + 1);
       }
     }
+    console.log(line);
     arr.push(line);
     scrollPage(arr);
   });
@@ -38,8 +39,14 @@ export const terminalSwitch = async (input, arr) => {
     case "banner":
       add(banner, arr);
       break;
+    case "email":
+      add(email, arr);
+      break;
     case "help":
       add(help, arr);
+      break;
+    case "history":
+      add(history, arr);
       break;
     case "projects":
       add(projects, arr);

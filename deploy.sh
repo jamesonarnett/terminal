@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+echo $'\342\232\231' Working... $'\342\232\231'
 # abort on errors
 set -e
 
@@ -13,5 +14,5 @@ git add .
 git commit -m 'auto-deploy'
 git push origin gh-pages
 
-echo 'Deployed'
-echo "$'\360\237\220\247' Check it out: https://jamesonarnett.github.io/terminal"
+echo $'\342\232\231' Deployment Finished $'\342\232\231'
+echo $'\360\237\220\247': Check it out: https://jamesonarnett.github.io/terminal

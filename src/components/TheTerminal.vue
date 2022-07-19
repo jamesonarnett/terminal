@@ -19,12 +19,14 @@
 
 <script>
 import { terminalSwitch } from "@/utils/terminalSwitch.js";
+// import { saveHistory, executeCmd } from "@/utils/terminalMethods.js";
 
 export default {
   data() {
     return {
       input: "",
       commandOutput: [],
+      history: ["<span class='text-color2'>Previous Commands:</span>"],
     };
   },
   methods: {
@@ -34,10 +36,17 @@ export default {
     cleanInput() {
       return String(this.input).toLowerCase().trim();
     },
+    saveHistory() {
+      saveHistory(this.cleanInput(), this.history);
+    },
     onEnter() {
+      this.saveHistory();
       if (this.cleanInput() === "clear") {
         window.scrollTo(0, 0);
         this.commandOutput = [];
+      } else if (this.cleanInput() === "history") {
+        console.log(this.history.join("\n"));
+        this.commandOutput.push(this.history.join("\n"));
       } else {
         terminalSwitch(this.cleanInput(), this.commandOutput);
       }

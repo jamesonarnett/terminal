@@ -1,5 +1,7 @@
 //sorted alphabetically
 
+const url = `'http://ajameson.com/resume' target='_blank'`;
+
 export const banner = [
   "<span class='text-colorWhite'>JamesonArnett (JA) Not a Corporation. All nights reserved (to coding).</span>",
   "<br>",
@@ -23,8 +25,8 @@ export const defaultCmd = [
 
 export const email = [
   "<br>",
-  //emoji?
-  "<span class='text-color2'>Email sent!</span>",
+  "<span class='text-color2'>You can email me at jamesonarnett@yahoo.com</span>",
+  "<span class='text-color2'>Or, checkout my resume at <a href='http://ajameson.com/' class='text-colorHelp'" + "target='_blank'>ajameson.com</a> if you prefer to call</span'>",
   "<br>",
 ];
 
@@ -44,8 +46,6 @@ export const help = [
   '<span class="text-colorWhite">whoami</span>      --->  <span class="text-color2">Who are you</span>',
   "<br>",
 ];
-
-export const history = [];
 
 export const ls = [
   "<br>",

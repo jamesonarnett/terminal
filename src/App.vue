@@ -46,4 +46,12 @@ body {
 .text-colorWhite {
   color: rgb(209, 209, 209);
 }
+
+.text-colorGrey {
+  color: #707070;
+}
+
+.text-colorYellow {
+  color: #e8f53b;
+}
 </style>
