@@ -12,7 +12,7 @@ import {
   whoami,
   whoareyou,
 } from "./commands";
-import { getQuote } from "../api/calls";
+import { getQuote, sudoRedirect, guiRediect } from "../api/calls";
 
 //scroll by lines does not work in Chrome || Safari'
 //must be fixed
@@ -48,6 +48,9 @@ export const terminalSwitch = async (input, arr) => {
     case "email":
       add(email, arr);
       break;
+    case "gui":
+      guiRediect();
+      break;
     case "help":
       add(help, arr);
       break;
@@ -68,6 +71,7 @@ export const terminalSwitch = async (input, arr) => {
       break;
     case "sudo":
       add(sudo, arr);
+      sudoRedirect();
       break;
     case "tuxsay":
       arr.push("<br />");

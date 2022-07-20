@@ -25,7 +25,7 @@ body {
   margin: 0;
   padding: 15px 20px;
   color: #ffffff;
-  background: #211d1b;
+  background: #000000; //#211d1b;
   overflow-x: hidden;
   width: 100vh;
   height: 100vh;
@@ -55,7 +55,7 @@ body {
   color: #e8f53b;
 }
 
-.text-colorblue {
-  color: #00b0ff;
+.text-colorGreen {
+  color: #519975;
 }
 </style>

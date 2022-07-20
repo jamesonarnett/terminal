@@ -36,6 +36,7 @@ export const help = [
   '<span class="text-colorWhite">banner</span>      --->  <span class="text-color2">Display the banner</span>',
   '<span class="text-colorWhite">clear</span>       --->  <span class="text-color2">Clear the terminal</span>',
   '<span class="text-colorWhite">email</span>       --->  <span class="text-color2">Wanna Chat?</span>',
+  '<span class="text-colorWhite">gui</span>         --->  <span class="text-color2">Redirect to portfolio website</span>',
   '<span class="text-colorWhite">help</span>        --->  <span class="text-color2">You seem to understand this one</span>',
   '<span class="text-colorWhite">history</span>     --->  <span class="text-color2">Previous Commands Executed</span>',
   '<span class="text-colorWhite">projects</span>    --->  <span class="text-color2">My work!</span>',
@@ -57,6 +58,11 @@ export const ls = [
 export const projects = [
   "<br>",
   "<span class='text-color2'>Projects: </span>",
+  "<span class='text-colorWhite'>Checkout my github ---> <a href='https://github.com/jamesonarnett/'" + "target=_blank" + ">here</a></span>",
+  "<br>",
+  "<span class='text-color2'><a href='https://jamgamejam.herokuapp.com/'" + "target=_blank" + ">JamGameJam</a> One of the first projects I ever made, all vanilla and a bit dated, but still a favorite</span>",
+  "<span class='text-color2'>Basdasd</span>",
+  "<span class='text-color2'>Casdasd</span>",
   "<br>",
 ];
 
