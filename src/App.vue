@@ -54,4 +54,8 @@ body {
 .text-colorYellow {
   color: #e8f53b;
 }
+
+.text-colorblue {
+  color: #00b0ff;
+}
 </style>

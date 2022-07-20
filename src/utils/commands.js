@@ -49,9 +49,10 @@ export const help = [
 
 export const ls = [
   "<br>",
-  "<span class='text-color2'>These are not the files you are looking for</span>",
+  " <span class='text-color2'>These are not the files you are looking for</span>",
   "<br>",
 ];
+
 
 export const projects = [
   "<br>",
@@ -61,7 +62,8 @@ export const projects = [
 
 export const secret = [
   "<br>",
-  '<span class="">sudo</span>           Only use if you\'re admin',
+  '<span class="">New command: "sudo"</span>',
+  "<span class='text-color2'>*Only use if you\'re admin*</span>",
   "<br>"
 ];
 
@@ -71,7 +73,12 @@ export const social = [
   "<br>",
 ];
 
-export const sudo = [];
+export const sudo = [
+  "<br>",
+  "<span class='text-color2'>lol</span>",
+  "<span class='text-color2'>But seriously... what did you expect?</span>",
+  "<br>",
+];
 
 export const tuxsay = [
 "         ________________         ",
@@ -79,32 +86,32 @@ export const tuxsay = [
 "                 .                ",
 "                  .               ",
 "                   .              ",  
-"                    .88888888:.",
-"                   88888888.88888.",
-"                 .8888888888888888.",
-"                 888888888888888888",
-"                 88' _`88'_  `88888",
-"                 88 88 88 88  88888",
-"                 88_88_::_88_:88888",
-"                 88:::,::,:::::8888",
-"                 88`:::::::::'`8888",
-"                .88  `::::'    8:88.",
-"               8888            `8:888.",
-"             .8888'             `888888.",
-"            .8888:..  .::.  ...:'8888888:.",
-"           .8888.'     :'     `'::`88:88888",
-"           .8888        '         `.888:8888.",
-"          888:8         .           888:88888",
-"        .888:88        .:           888:88888:",
-"        8888888.       ::           88:888888",
-"        `.::.888.      ::          .88888888",
-"       .::::::.888.    ::         :::`8888'.:.",
-"       ::::::::::.888   '         .::::::::::::",
-"      ::::::::::::.8    '      .:8::::::::::::.",
-"      .::::::::::::::.        .:888:::::::::::::",
-"      :::::::::::::::88:.__..:88888:::::::::::'",
-"       `'.:::::::::::88888888888.88:::::::::'",
-"            `':::_:' -- '' -'-' `':_::::'`",
+" <span class='text-colorGrey'>              .88888888:.                   </span>", 
+" <span class='text-colorGrey'>             88888888.88888.                </span>",
+" <span class='text-colorGrey'>           .8888888888888888.               </span>",
+" <span class='text-colorGrey'>           888888888888888888               </span>",
+" <span class='text-colorGrey'>           88' _`88'_  `88888               </span>",
+" <span class='text-colorGrey'>           88 88 88 88  88888               </span>",
+" <span class='text-colorGrey'>           88_88_::_88_:88888               </span>",
+" <span class='text-colorGrey'>           88<span class=text-colorYellow>:::,::,:::::</span>8888               </span>",
+" <span class='text-colorGrey'>           88<span class=text-colorYellow>`:::::::::'`</span>8888               </span>",
+" <span class='text-colorGrey'>          .88<span class=text-colorYellow>  `::::'    </span>8:88.              </span>",
+" <span class='text-colorGrey'>         8888            `8:888.            </span>",
+" <span class='text-colorGrey'>       .8888'             `888888.          </span>",
+" <span class='text-colorGrey'>      .8888:..  .::.  ...:'8888888:.        </span>",
+" <span class='text-colorGrey'>     .8888.'     :'     `'::`88:88888       </span>",
+" <span class='text-colorGrey'>     .8888        '         `.888:8888.     </span>",
+" <span class='text-colorGrey'>    888:8         .           888:88888     </span>",
+" <span class='text-colorGrey'>  .888:88        .:           888:88888:    </span>",
+" <span class='text-colorGrey'>  8888888.       ::           88:888888     </span>",
+" <span class='text-colorGrey'><span class=text-colorYellow>  `.::.</span>888.      ::          .88888888      </span>",
+" <span class='text-colorGrey'><span class=text-colorYellow> .::::::.</span>888.    ::         :::`8888'<span class=text-colorYellow>.:.    </span></span>",
+" <span class='text-colorGrey'><span class=text-colorYellow> ::::::::::.</span>888   '         .<span class=text-colorYellow>::::::::::::   </span></span>"      ,
+" <span class='text-colorGrey'><span class=text-colorYellow>::::::::::::</span>.8    '      .:8<span class=text-colorYellow>::::::::::::.   </span></span>",
+" <span class='text-colorGrey'><span class=text-colorYellow>.::::::::::::::.</span>        .:888<span class=text-colorYellow>:::::::::::::  </span></span>",
+" <span class='text-colorGrey'><span class=text-colorYellow>:::::::::::::::</span>88:.__..:88888<span class=text-colorYellow>:::::::::::'   </span></span>",
+" <span class='text-colorGrey'><span class=text-colorYellow> `'.:::::::::::</span>88888888888.88<span class=text-colorYellow>:::::::::'     </span></span>",
+" <span class='text-colorGrey'><span class=text-colorYellow>      `':::_:'</span> -- '' -'-' `'<span class=text-colorYellow>:_::::'`        </span></span>",
   "<br>",
 ];
 
@@ -125,5 +132,4 @@ export const whoareyou = [
   // Github coPilot just called me the fuck out.^^ that was an autocomplete. Thats wild.
   "<br>",
 ];
-
 

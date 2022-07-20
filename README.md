@@ -6,8 +6,6 @@ A project bootstrapped with create-vue-app, made in the style of a linux termina
 
 ## List of Commands
 
-Available Commands:
-
 <ul> 
   <li>banner     --->  Display the banner</li>
   <li>clear      --->  Clear the terminal</li>

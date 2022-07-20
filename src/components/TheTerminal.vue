@@ -45,7 +45,6 @@ export default {
         window.scrollTo(0, 0);
         this.commandOutput = [];
       } else if (this.cleanInput() === "history") {
-        console.log(this.history.join("\n"));
         this.commandOutput.push(this.history.join("\n"));
       } else {
         terminalSwitch(this.cleanInput(), this.commandOutput);

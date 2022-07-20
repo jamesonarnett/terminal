@@ -3,15 +3,19 @@ import {
   defaultCmd,
   email,
   help,
+  ls,
   projects,
   secret,
   social,
+  sudo,
   tuxsay,
   whoami,
   whoareyou,
 } from "./commands";
 import { getQuote } from "../api/calls";
 
+//scroll by lines does not work in Chrome || Safari'
+//must be fixed
 const scrollPage = (arr) => {
   if (arr.length > 20) {
     window.scrollByLines(arr.length - 3);
@@ -28,13 +32,15 @@ const add = (cmd, arr) => {
         line = line.slice(0, i) + "&nbsp;" + line.slice(i + 1);
       }
     }
-    console.log(line);
     arr.push(line);
     scrollPage(arr);
   });
 };
 
 export const terminalSwitch = async (input, arr) => {
+  if (input.includes("sudo")) {
+    input = "sudo";
+  }
   switch (input) {
     case "banner":
       add(banner, arr);
@@ -48,6 +54,9 @@ export const terminalSwitch = async (input, arr) => {
     case "history":
       add(history, arr);
       break;
+    case "ls":
+      add(ls, arr);
+      break;
     case "projects":
       add(projects, arr);
       break;
@@ -56,6 +65,9 @@ export const terminalSwitch = async (input, arr) => {
       break;
     case "social":
       add(social, arr);
+      break;
+    case "sudo":
+      add(sudo, arr);
       break;
     case "tuxsay":
       arr.push("<br />");
