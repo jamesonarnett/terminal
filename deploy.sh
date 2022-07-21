@@ -14,5 +14,4 @@ git add .
 git commit -m 'auto-deploy'
 git push origin gh-pages
 
-echo $'\342\232\231' Deployment Finished $'\342\232\231'
-echo $'\360\237\220\247': Check it out: https://jamesonarnett.github.io/terminal
+echo $'\360\237\220\247' Done: Check it out @ https://jamesonarnett.github.io/terminal
