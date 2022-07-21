@@ -60,8 +60,8 @@ export default {
 
 <style scoped lang="scss">
 .terminal {
-  width: 110vw;
-  height: 110vh;
+  width: 100vw;
+  height: 100vh;
 }
 textarea {
   left: -1000px;

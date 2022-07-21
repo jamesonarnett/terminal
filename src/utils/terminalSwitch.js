@@ -12,7 +12,7 @@ import {
   whoami,
   whoareyou,
 } from "./commands";
-import { getQuote, sudoRedirect, guiRediect } from "../api/calls";
+import { getQuote, sudoRedirect, guiRediect, getWeather } from "../api/calls";
 
 //scroll by lines does not work in Chrome || Safari'
 //must be fixed
@@ -77,6 +77,10 @@ export const terminalSwitch = async (input, arr) => {
       arr.push("<br />");
       arr.push(await getQuote());
       add(tuxsay, arr);
+      break;
+    case "weather":
+      arr.push("<br />");
+      arr.push(await getWeather());
       break;
     case "whoami":
       add(whoami, arr);

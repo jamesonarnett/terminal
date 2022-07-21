@@ -43,6 +43,7 @@ export const help = [
   '<span class="text-colorWhite">secret</span>      --->  <span class="text-color2">Do you have one too?</span>',
   '<span class="text-colorWhite">social</span>      --->  <span class="text-color2">Find me online</span>',
   '<span class="text-colorWhite">tuxsay</span>      --->  <span class="text-color2">A random quote from our favorite Linux mascot</span>',
+  '<span class="text-colorWhite">weather</span>     --->  <span class="text-color2">Your local weather</span>',
   '<span class="text-colorWhite">whoareyou</span>   --->  <span class="text-color2">Who is Jameson</span>',
   '<span class="text-colorWhite">whoami</span>      --->  <span class="text-color2">Who are you</span>',
   "<br>",
@@ -120,8 +121,6 @@ export const tuxsay = [
 " <span class='text-colorGrey'><span class=text-colorYellow>      `':::_:'</span> -- '' -'-' `'<span class=text-colorYellow>:_::::'`        </span></span>",
   "<br>",
 ];
-
-export const weather = [];
 
 export const whoami = [
   //ive seen a website before, that had a similar "joke",

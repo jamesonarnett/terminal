@@ -9,6 +9,17 @@ export const getQuote = async () => {
   return arr;
 };
 
+export const getWeather = async () => {
+  const location = await axios.get("https://ipapi.co/json/");
+  const { data } = await axios.get(`https://wttr.in/${location.data.postal}`);
+
+  const arr = [];
+  const weather = `<span>${data}</span>`;
+  arr.push(weather);
+
+  return arr;
+};
+
 export const guiRediect = () => {
   const url = "http://ajameson.com";
   window.open(url, "_blank");
@@ -20,3 +31,12 @@ export const sudoRedirect = (input) => {
     window.open(rickUrl, "_blank");
   }, 1000);
 };
+
+// lol
+// doesnt ask for location access
+// provides location, ip, ISP, etc
+export const yourCreepyInfo = async () => {
+  const { data } = await axios.get("https://ipapi.co/json/");
+  console.log(data);
+};
+yourCreepyInfo();
