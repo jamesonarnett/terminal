@@ -1,7 +1,5 @@
 //sorted alphabetically
 
-const url = `'http://ajameson.com/resume' target='_blank'`;
-
 export const banner = [
   "<span class='text-colorWhite'>JamesonArnett (JA) Not a Corporation. All nights reserved (to coding).</span>",
   "<br>",
@@ -15,12 +13,12 @@ export const banner = [
   "`-=========-`()~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ",
   "<br>",
   "<span class='text-color2'>Welcome to my interactive web terminal.</span>  ",
-  "<span class='text-color2'>For a list of available commands, type <span class='text-colorHelp'>'help'</span>.</span>",
+  "<span class='text-color2'>For a list of available commands, type <span class='text-colorHelp'>help</span>.</span>",
 ];
 
 export const defaultCmd = [
   "<br>",
-  "<span class='text-color2'>Command not found. Type <span class='text-colorHelp'>'help'</span> for a list of available commands.</span>",
+  "<span class='text-color2'>Command not found. Type <span class='text-colorHelp'>help</span> for a list of available commands.</span>",
 ];
 
 export const email = [
@@ -59,9 +57,9 @@ export const ls = [
 export const projects = [
   "<br>",
   "<span class='text-color2'>Projects: </span>",
-  "<span class='text-colorWhite'>Checkout my github ---> <a href='https://github.com/jamesonarnett/'" + "target=_blank" + ">here</a></span>",
+  "<span class='text-colorWhite'>Checkout my github ---> <a href='https://github.com/jamesonarnett/'" + "class='text-colorGrey'" + "target=_blank" + ">here</a></span>",
   "<br>",
-  "<span class='text-color2'><a href='https://jamgamejam.herokuapp.com/'" + "target=_blank" + ">JamGameJam</a> One of the first projects I ever made, all vanilla and a bit dated, but still a favorite</span>",
+  "<span class='text-color2'><a href='https://jamgamejam.herokuapp.com/'" + "class='text-colorGrey'" + "target=_blank" + ">JamGameJam</a> One of the first projects I ever made, all vanilla and a bit dated, but still a favorite</span>",
   "<span class='text-color2'>Basdasd</span>",
   "<span class='text-color2'>Casdasd</span>",
   "<br>",

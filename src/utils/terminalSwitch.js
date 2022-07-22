@@ -14,17 +14,9 @@ import {
 } from "./commands";
 import { getQuote, sudoRedirect, guiRediect, getWeather } from "../api/calls";
 
-//scroll by lines does not work in Chrome || Safari'
-//must be fixed
-// const scrollPage = (arr) => {
-//   if (arr.length > 20) {
-//     window.scrollByLines(arr.length - 3);
-//   }
-// };
-
 // add the command to the commandsOutput array in TheTerminal.vue
 // for loop checks line[i] for spaces to make ascii art look correct
-// as long as the previous letter was not "n", so the <span> tags work
+// as long as the previous letter was not "n" || "a", so the <span>/<a> tags work
 const add = (cmd, arr) => {
   cmd.forEach((line) => {
     for (let i = 0; i < line.length; i++) {
@@ -33,7 +25,6 @@ const add = (cmd, arr) => {
       }
     }
     arr.push(line);
-    // scrollPage(arr);
   });
 };
 

@@ -1,8 +1,12 @@
 <template>
   <div class="terminal" @click="textFocus">
-    <div class="text-color1">
-      <p v-html="command" v-for="command in commandOutput" :key="command"></p>
-    </div>
+    <transition-group name="type" class="text-color1" tag="div" appear>
+      <p
+        v-html="command"
+        v-for="command in commandOutput"
+        :key="commandOutput.indexOf(command)"
+      ></p>
+    </transition-group>
     <textarea
       id="textarea"
       ref="textarea"
@@ -19,7 +23,7 @@
 
 <script>
 import { terminalSwitch } from "@/utils/terminalSwitch.js";
-import { saveHistory, executeCmd } from "@/utils/terminalMethods.js";
+import { saveHistory } from "@/utils/terminalMethods.js";
 
 export default {
   data() {
@@ -48,8 +52,14 @@ export default {
         this.commandOutput.push(this.history.join("\n"));
       } else {
         terminalSwitch(this.cleanInput(), this.commandOutput);
+        this.textScroll();
       }
       this.input = "";
+    },
+    textScroll() {
+      setTimeout(() => {
+        window.scrollTo(0, document.body.offsetHeight);
+      }, 80);
     },
   },
   mounted() {
@@ -75,9 +85,39 @@ p {
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.05em;
-  animation: typing 1.5s steps(30, end);
 }
 
+// .type-enter-from,
+// .type-leave-from {
+//   p {
+//     opacity: 0;
+//     transform: translateY(0.5em);
+
+//     span {
+//       opacity: 0;
+//       transform: translateY(0.5em);
+//     }
+//   }
+//   width: 0%;
+// }
+// .type-enter-active,
+// .type-leave-active {
+//   transition: all 0.5s ease-in-out;
+//   transition: opacity 2s;
+// }
+// .type-enter-to,
+// .type-leave-to {
+//   p {
+//     opacity: 1;
+//     transform: translateY(0);
+
+//     span {
+//       opacity: 1;
+//       transform: translateY(0);
+//     }
+//   }
+//   width: 100%;
+// }
 @keyframes typing {
   from {
     width: 0;
