@@ -72,7 +72,6 @@ p {
   display: block;
   line-height: 1.3em;
   margin: 0;
-  overflow: hidden;
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.05em;

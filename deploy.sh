@@ -15,3 +15,5 @@ git commit -m 'auto-deploy'
 git push origin gh-pages
 
 echo $'\360\237\220\247' Done: Check it out @ https://jamesonarnett.github.io/terminal
+
+git checkout main
