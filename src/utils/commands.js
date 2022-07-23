@@ -23,8 +23,8 @@ export const defaultCmd = [
 
 export const email = [
   "<br>",
-  "<span class='text-color2'>You can email me at jamesonarnett@yahoo.com</span>",
-  "<span class='text-color2'>Or, checkout my resume at <a href='http://ajameson.com/' class='text-colorHelp'" + "target='_blank'>ajameson.com</a> if you prefer to call</span'>",
+  "<span class='text-color2'>You can email me at <span class='text-colorGrey'>jamesonarnett@yahoo.com</span></span>",
+  "<span class='text-color2'>You can see more of my work at <span class='text-colorGrey'><a href='http://ajameson.com/'" + "target='_blank'>ajameson.com</span></a></span'>",
   "<br>",
 ];
 
@@ -60,8 +60,9 @@ export const projects = [
   "<span class='text-colorWhite'>Checkout my github ---> <a href='https://github.com/jamesonarnett/'" + "class='text-colorGrey'" + "target=_blank" + ">here</a></span>",
   "<br>",
   "<span class='text-color2'><a href='https://jamgamejam.herokuapp.com/'" + "class='text-colorGrey'" + "target=_blank" + ">JamGameJam</a> One of the first projects I ever made, all vanilla and a bit dated, but still a favorite</span>",
-  "<span class='text-color2'>Basdasd</span>",
-  "<span class='text-color2'>Casdasd</span>",
+  "<span class='text-color2'>PlaceholderProject2</span>",
+  "<span class='text-color2'>Project3</span>",
+  "<span class='text-color2'>And here is where I would put my trophy... IF I HAD ONE - Timmys Dad</span>",
   "<br>",
 ];
 
@@ -74,7 +75,10 @@ export const secret = [
 
 export const social = [
   "<br>",
-  "<span class='text-color2'>Social Media:</span>",
+  "<span class='text-color2'>Lurker, dont post much, but responsive if you shoot me a DM <span class='text-colorGrey'>¯\\_(ツ)_/¯</span></span>",
+  "<span class='text-colorGrey'><a href='https://github.com/jamesonarnett'" + "target=_blank" + ">Github</a></span>",
+  "<span class='text-colorGrey'><a href='https://www.linkedin.com/in/jameson-arnett/'" + "target=_blank" + ">LinkedIn</a></span>",
+  "<span class='text-colorGrey'><a href='https://twitter.com/Lil_LetDown'" + "target=_blank" + ">Twitter</a></span>",
   "<br>",
 ];
 
@@ -130,9 +134,20 @@ export const whoami = [
 
 export const whoareyou = [
   "<br>",
-  "<span class='text-color2'>Hey, I'm Jameson</span>",
-  ////I'm a full stack developer, and I'm a bit of a nerd.
-  // Github coPilot just called me the fuck out.^^ that was an autocomplete. Thats wild.
+  "<span class='text-colorGrey'>Hey, I'm <span class='text-colorYellow'>Jameson</span></span>",
+  "<span class='text-colorGrey'>A fullstack developer intern at Spear Education</span>",
+  "<span class='text-colorGrey'>and Junior CS student at Colorado State Global</span>",
+  "<span class='text-colorGrey'>Here lately, I have been working primarily with </span>",
+  "<span class='text-colorGrey'>JavaScript (Vue/Nuxt) and PHP (Laravel/Zend)</span>",
+  "<span class='text-colorGrey'>While I prefer JS, I am always down to learn something new</span>",
+  "<span class='text-colorGrey'>Some of my favorite web technologies so far: React, TypeScript,</span>",
+  "<span class='text-colorGrey'>Bun, Nuxt, and I plan on taking a look at Electron next!</span>",
+  "<span class='text-colorGrey'>When I am not working I love to play video games (RPG/RTS),</span>",
+  "<span class='text-colorGrey'>eat (lol), and read (fantasy, non-fiction, and Reddit!)</span>",
+  "<br>",
+  "<br>",
+  "<span class='text-colorGrey'>Make sure to tryout the <span class='text-colorYellow'>tuxsay & weather</span> commands while</span>",
+  "<span class='text-colorGrey'>you are here, and checkout my website by typing <span class='text-colorYellow'>gui</span></span>",
   "<br>",
 ];
 

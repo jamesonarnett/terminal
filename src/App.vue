@@ -53,6 +53,10 @@ body {
 
 .text-colorGrey {
   color: #707070;
+
+  a:visited {
+    color: #707070;
+  }
 }
 
 .text-colorYellow {
