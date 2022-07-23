@@ -23,7 +23,7 @@
 
 <script>
 import { terminalSwitch } from "@/utils/terminalSwitch.js";
-import { saveHistory } from "@/utils/terminalMethods.js";
+import { saveHistory, scrollTojShell } from "@/utils/terminalMethods.js";
 
 export default {
   data() {
@@ -35,7 +35,9 @@ export default {
   },
   methods: {
     textFocus() {
-      this.$refs.textarea.focus();
+      if (!this.$refs.textarea.activeElement) {
+        this.$refs.textarea.focus();
+      }
     },
     cleanInput() {
       return String(this.input).toLowerCase().trim();
@@ -45,21 +47,17 @@ export default {
     },
     onEnter() {
       this.saveHistory();
-      if (this.cleanInput() === "clear") {
+      if (this.cleanInput() === ("clear" || "Clear")) {
         window.scrollTo(0, 0);
         this.commandOutput = [];
       } else if (this.cleanInput() === "history") {
         this.commandOutput.push(this.history.join("\n"));
+        scrollTojShell(this.commandOutput);
       } else {
         terminalSwitch(this.cleanInput(), this.commandOutput);
-        this.textScroll();
+        scrollTojShell(this.commandOutput);
       }
       this.input = "";
-    },
-    textScroll() {
-      setTimeout(() => {
-        window.scrollTo(0, document.body.offsetHeight);
-      }, 80);
     },
   },
   mounted() {
