@@ -5,9 +5,10 @@ set -e
 
 # add some color
 green='\033[0;32m'
+yellow='\033[0;33m'
 clear='\033[0m'
 
-echo $'\342\232\231' Working... $'\342\232\231'
+echo $'\342\232\231' "${yellow}Working...${clear}" $'\342\232\231'
 
 # build
 git checkout gh-pages

@@ -20,12 +20,16 @@ export default {
   src: url("~assets/fonts/CascadiaCode.ttf") format("trueType");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "CascadiaCode", monospace;
   margin: 0;
   padding: 15px 20px;
   color: #ffffff;
-  background: #000000; //#211d1b;
+  background: #000000;
   overflow-x: hidden;
   width: 100vh;
   height: 100vh;

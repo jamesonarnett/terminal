@@ -8,3 +8,24 @@ export const saveHistory = (input, arr) => {
     arr.push("<br>");
   }
 };
+
+export const isMobileUser = () => {
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    return true;
+  }
+  return false;
+};
+
+export const scrollTojShell = (arr) => {
+  setTimeout(() => {
+    if (!isMobileUser()) {
+      window.scrollBy(0, arr.length * 5);
+    } else {
+      window.scrollBy(0, arr.length * 3);
+    }
+  }, 80);
+};
