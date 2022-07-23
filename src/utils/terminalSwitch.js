@@ -9,10 +9,15 @@ import {
   social,
   sudo,
   tuxsay,
-  whoami,
   whoareyou,
 } from "./commands";
-import { getQuote, sudoRedirect, guiRediect, getWeather } from "../api/calls";
+import {
+  getQuote,
+  sudoRedirect,
+  guiRediect,
+  getWeather,
+  whoami,
+} from "../api/calls";
 
 // add the command to the commandsOutput array in TheTerminal.vue
 // for loop checks line[i] for spaces to make ascii art look correct
@@ -74,7 +79,7 @@ export const terminalSwitch = async (input, arr) => {
       arr.push(await getWeather());
       break;
     case "whoami":
-      add(whoami, arr);
+      arr.push(await whoami());
       break;
     case "whoareyou":
       add(whoareyou, arr);
