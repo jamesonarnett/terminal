@@ -1,4 +1,5 @@
 import axios from "axios";
+import { forceScroll } from "@/utils/terminalMethods";
 
 export const getQuote = async () => {
   try {
@@ -23,6 +24,8 @@ export const getQuote = async () => {
 
     let noCommas = arr.join("");
     return noCommas;
+  } finally {
+    forceScroll();
   }
 };
 
@@ -51,6 +54,8 @@ export const getWeather = async () => {
 
     let noCommas = arr.join("");
     return noCommas;
+  } finally {
+    forceScroll();
   }
 };
 
@@ -119,5 +124,7 @@ export const whoami = async () => {
 
     let noCommas = arr.join("");
     return noCommas;
+  } finally {
+    forceScroll();
   }
 };
