@@ -47,7 +47,7 @@ export default {
     },
     onEnter() {
       this.saveHistory();
-      if (this.cleanInput() === ("clear" || "Clear")) {
+      if (this.cleanInput() === "clear") {
         window.scrollTo(0, 0);
         this.commandOutput = [];
       } else if (this.cleanInput() === "history") {

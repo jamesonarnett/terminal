@@ -29,3 +29,9 @@ export const scrollTojShell = (arr) => {
     }
   }, 80);
 };
+
+export const forceScroll = () => {
+  const arr = new Array(150);
+  arr.fill(0, 0, 150);
+  scrollTojShell(arr);
+};
