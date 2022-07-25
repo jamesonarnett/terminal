@@ -1,4 +1,5 @@
 export const saveHistory = (input, arr) => {
+  //incorporate localStorage? ehhh...
   if (input !== "") {
     const command = `<span class='text-colorWhite'>${input} </span>`;
 
@@ -31,7 +32,13 @@ export const scrollTojShell = (arr) => {
 };
 
 export const forceScroll = () => {
+  //needs some fine tuning, and some mobile love
   const arr = new Array(150);
   arr.fill(0, 0, 150);
   scrollTojShell(arr);
+};
+
+export const changeTheme = () => {
+  // maybe worth it?
+  // at least one?
 };

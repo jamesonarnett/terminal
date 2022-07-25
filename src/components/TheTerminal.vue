@@ -1,3 +1,9 @@
+<!-- Needs text animation, like a typewriter effect on text entry -->
+<!-- Id like to add a few more commands, no hard number, just more -->
+<!-- Changeable theme(s)? -->
+<!-- Ensure scroll fix works across all major browsers.... adjust scroll amount on mobile -->
+<!-- Looks into mobile responsivness. It works... but it aint "pretty pretty" -->
+
 <template>
   <div class="terminal" @click="textFocus">
     <transition-group name="type" class="text-color1" tag="div" appear>
@@ -85,37 +91,6 @@ p {
   letter-spacing: 0.05em;
 }
 
-// .type-enter-from,
-// .type-leave-from {
-//   p {
-//     opacity: 0;
-//     transform: translateY(0.5em);
-
-//     span {
-//       opacity: 0;
-//       transform: translateY(0.5em);
-//     }
-//   }
-//   width: 0%;
-// }
-// .type-enter-active,
-// .type-leave-active {
-//   transition: all 0.5s ease-in-out;
-//   transition: opacity 2s;
-// }
-// .type-enter-to,
-// .type-leave-to {
-//   p {
-//     opacity: 1;
-//     transform: translateY(0);
-
-//     span {
-//       opacity: 1;
-//       transform: translateY(0);
-//     }
-//   }
-//   width: 100%;
-// }
 @keyframes typing {
   from {
     width: 0;

@@ -124,14 +124,6 @@ export const tuxsay = [
   "<br>",
 ];
 
-export const whoami = [
-  //ive seen a website before, that had a similar "joke",
-  //that added in their location/browser info, that could be fun.
-  "<br>",
-  "<span class='text-color2'>How the hell am I supposed to know?</span>",
-  "<br>",
-];
-
 export const whoareyou = [
   "<br>",
   "<span class='text-colorGrey'>Hey, I'm <span class='text-colorYellow'>Jameson</span></span>",
