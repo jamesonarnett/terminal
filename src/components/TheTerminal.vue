@@ -1,3 +1,8 @@
+<!-- Needs text animation, like a typewriter effect on text entry -->
+<!-- Id like to add a few more commands, no hard number, just more -->
+<!-- Changeable theme(s)? -->
+<!-- Looks into mobile responsivness. It works... but it aint "pretty pretty" -->
+
 <template>
   <div class="terminal" @click="textFocus">
     <transition-group name="type" class="text-color1" tag="div" appear>
@@ -48,8 +53,10 @@ export default {
     onEnter() {
       this.saveHistory();
       if (this.cleanInput() === "clear") {
-        window.scrollTo(0, 0);
         this.commandOutput = [];
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 100);
       } else if (this.cleanInput() === "history") {
         this.commandOutput.push(this.history.join("\n"));
         scrollTojShell(this.commandOutput);
@@ -85,37 +92,6 @@ p {
   letter-spacing: 0.05em;
 }
 
-// .type-enter-from,
-// .type-leave-from {
-//   p {
-//     opacity: 0;
-//     transform: translateY(0.5em);
-
-//     span {
-//       opacity: 0;
-//       transform: translateY(0.5em);
-//     }
-//   }
-//   width: 0%;
-// }
-// .type-enter-active,
-// .type-leave-active {
-//   transition: all 0.5s ease-in-out;
-//   transition: opacity 2s;
-// }
-// .type-enter-to,
-// .type-leave-to {
-//   p {
-//     opacity: 1;
-//     transform: translateY(0);
-
-//     span {
-//       opacity: 1;
-//       transform: translateY(0);
-//     }
-//   }
-//   width: 100%;
-// }
 @keyframes typing {
   from {
     width: 0;
