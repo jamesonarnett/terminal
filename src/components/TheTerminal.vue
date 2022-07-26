@@ -1,7 +1,6 @@
 <!-- Needs text animation, like a typewriter effect on text entry -->
 <!-- Id like to add a few more commands, no hard number, just more -->
 <!-- Changeable theme(s)? -->
-<!-- Ensure scroll fix works across all major browsers.... adjust scroll amount on mobile -->
 <!-- Looks into mobile responsivness. It works... but it aint "pretty pretty" -->
 
 <template>
@@ -54,8 +53,10 @@ export default {
     onEnter() {
       this.saveHistory();
       if (this.cleanInput() === "clear") {
-        window.scrollTo(0, 0);
         this.commandOutput = [];
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 100);
       } else if (this.cleanInput() === "history") {
         this.commandOutput.push(this.history.join("\n"));
         scrollTojShell(this.commandOutput);

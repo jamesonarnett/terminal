@@ -32,9 +32,9 @@ export const scrollTojShell = (arr) => {
 };
 
 export const forceScroll = () => {
-  //needs some fine tuning, and some mobile love
-  const arr = new Array(150);
-  arr.fill(0, 0, 150);
+  let arr;
+  isMobileUser() ? (arr = new Array(100)) : (arr = new Array(170));
+  arr.fill(0, 0, 170);
   scrollTojShell(arr);
 };
 
