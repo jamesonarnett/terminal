@@ -4,7 +4,7 @@
 <!-- Looks into mobile responsivness. It works... but it aint "pretty pretty" -->
 
 <template>
-  <div class="terminal" @click="textFocus">
+  <div class="terminal dark-mode" @click="textFocus">
     <transition-group name="type" class="text-color1" tag="div" appear>
       <p
         v-html="command"
@@ -36,6 +36,7 @@ export default {
       input: "",
       commandOutput: [],
       history: ["<span class='text-color2'>Previous Commands:</span>", "<br>"],
+      theme: "dark",
     };
   },
   methods: {
@@ -73,81 +74,25 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.terminal {
-  width: 100vw;
-  height: 100vh;
-}
-textarea {
-  left: -1000px;
-  position: absolute;
-}
+<style lang="scss">
+//static styles
+@import "../assets/styles/terminal.scss";
 
-p {
-  display: block;
-  line-height: 1.3em;
-  margin: 0;
-  white-space: nowrap;
-  margin: 0;
-  letter-spacing: 0.05em;
-}
+.dark-mode {
+  background-color: black;
+  color: #ffffff;
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
+  #jShell::before {
+    color: #519975;
   }
 }
 
-// CURSOR
-.cursor {
-  font-size: 12px;
-  color: #73abad;
-  background-color: #73abad;
-  position: relative;
-  opacity: 1;
-  height: 1.5em;
-  width: 10px;
-  max-width: 10px;
-  transform: translateY(4px);
-  overflow: hidden;
-  text-indent: -5px;
-  display: inline-block;
-  text-decoration: blink;
-  animation: blinker 1s linear infinite;
-}
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
 
-#jShell {
-  line-height: 1.3em;
-  margin-top: -2px;
-  animation: show 0.5s ease forwards;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
-#jShell::before {
-  color: #519975;
-  content: "visitor@jShell.com:~$";
-  margin-right: 8px;
-}
-
-#jShell.password::before {
-  content: "Password:";
-}
-
-@keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+  #jShell::before {
+    color: #795199;
   }
 }
 </style>

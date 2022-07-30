@@ -38,6 +38,15 @@ export const forceScroll = () => {
   scrollTojShell(arr);
 };
 
+// commands
+export const echo = (input, arr) => {
+  const newPut = input.replace("echo", "");
+  arr.push("<br />");
+  arr.push(`<span class='text-colorWhite'>${newPut}</span>`);
+  arr.push("<br />");
+  return arr;
+};
+
 export const changeTheme = () => {
   // maybe worth it?
   // at least one?
