@@ -15,6 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/styles/textColors.scss";
 @font-face {
   font-family: "CascadiaCode";
   src: url("~assets/fonts/CascadiaCode.ttf") format("trueType");
@@ -27,44 +28,11 @@ html {
 body {
   font-family: "CascadiaCode", monospace;
   margin: 0;
-  padding: 15px 20px;
+  background-color: black;
   color: #ffffff;
-  background: #000000;
   overflow-x: hidden;
   width: 100vh;
   height: 100vh;
-}
-.text-color1 {
-  color: #795199;
-}
-
-.text-color2 {
-  color: #b89076;
-}
-
-.text-colorHelp {
-  color: #795199;
-  text-shadow: 0 0 3px #795199;
-}
-
-.text-colorWhite {
-  color: rgb(209, 209, 209);
-}
-
-.text-colorGrey {
-  color: #707070;
-
-  a:visited {
-    color: #707070;
-  }
-}
-
-.text-colorYellow {
-  color: #e8f53b;
-}
-
-.text-colorGreen {
-  color: #519975;
 }
 
 @media only screen and (max-width: 1100px) {

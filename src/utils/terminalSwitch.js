@@ -18,6 +18,7 @@ import {
   getWeather,
   whoami,
 } from "../api/calls";
+import { echo } from "./terminalMethods";
 
 // add the command to the commandsOutput array in TheTerminal.vue
 // for loop checks line[i] for spaces to make ascii art look correct
@@ -36,10 +37,16 @@ const add = (cmd, arr) => {
 export const terminalSwitch = async (input, arr) => {
   if (input.includes("sudo")) {
     input = "sudo";
+  } else if (input.includes("echo")) {
+    echo(input, arr);
+    input = "echo";
   }
+
   switch (input) {
     case "banner":
       add(banner, arr);
+      break;
+    case "echo":
       break;
     case "email":
       add(email, arr);
@@ -68,6 +75,8 @@ export const terminalSwitch = async (input, arr) => {
     case "sudo":
       add(sudo, arr);
       sudoRedirect();
+      break;
+    case "theme":
       break;
     case "tuxsay":
       arr.push("<br />");

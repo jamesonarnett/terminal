@@ -1,0 +1,76 @@
+.terminal {
+  width: 100vw;
+  height: 100vh;
+  padding: 15px 20px;
+}
+textarea {
+  left: -1000px;
+  position: absolute;
+}
+
+p {
+  display: block;
+  line-height: 1.3em;
+  margin: 0;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+// CURSOR
+.cursor {
+  font-size: 12px;
+  color: #73abad;
+  background-color: #73abad;
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 10px;
+  max-width: 10px;
+  transform: translateY(4px);
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#jShell {
+  line-height: 1.3em;
+  margin-top: -2px;
+  animation: show 0.5s ease forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+#jShell::before {
+  content: "visitor@jShell.com:~$";
+  margin-right: 8px;
+}
+
+#jShell.password::before {
+  content: "Password:";
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
