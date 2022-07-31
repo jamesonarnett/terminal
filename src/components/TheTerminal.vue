@@ -1,7 +1,5 @@
 <!-- Needs text animation, like a typewriter effect on text entry -->
-<!-- Id like to add a few more commands, no hard number, just more -->
 <!-- Changeable theme(s)? -->
-<!-- Looks into mobile responsivness. It works... but it aint "pretty pretty" -->
 
 <template>
   <div class="terminal dark-mode" @click="textFocus">
