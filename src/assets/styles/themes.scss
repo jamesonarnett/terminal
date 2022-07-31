@@ -1,0 +1,83 @@
+.dark-mode {
+  background-color: black;
+  color: #ffffff;
+
+  #jShell::before {
+    color: #519975;
+  }
+
+  .text-color1 {
+    color: #795199;
+  }
+
+  .text-color2 {
+    color: #b89076;
+  }
+
+  .text-colorHelp {
+    color: #795199;
+    text-shadow: 0 0 3px #795199;
+  }
+
+  .text-colorWhite {
+    color: rgb(209, 209, 209);
+  }
+
+  .text-colorGrey {
+    color: #707070;
+
+    a:visited {
+      color: #707070;
+    }
+  }
+
+  .text-colorYellow {
+    color: #e8f53b;
+  }
+
+  .text-colorGreen {
+    color: #519975;
+  }
+}
+
+.light-mode {
+  background-color: #d4d1d1;
+  color: #000000;
+
+  #jShell::before {
+    color: #8800f8;
+  }
+
+  .text-color1 {
+    color: #6506b3;
+  }
+
+  .text-color2 {
+    color: #000000;
+  }
+
+  .text-colorHelp {
+    color: #795199;
+    text-shadow: 0 0 3px #795199;
+  }
+
+  .text-colorWhite {
+    color: rgb(0, 0, 0);
+  }
+
+  .text-colorGrey {
+    color: #000000;
+
+    a:visited {
+      color: #363636;
+    }
+  }
+
+  .text-colorYellow {
+    color: #1596d1;
+  }
+
+  .text-colorGreen {
+    color: #519975;
+  }
+}

@@ -33,6 +33,7 @@ export const help = [
   "<span class='text-colorWhite'>Available Commands: </span>",
   '<span class="text-colorWhite">banner</span>      --->  <span class="text-color2">Display the banner</span>',
   '<span class="text-colorWhite">clear</span>       --->  <span class="text-color2">Clear the terminal</span>',
+  '<span class="text-colorWhite">echo</span>        --->  <span class="text-color2">Echos your input</span>',
   '<span class="text-colorWhite">email</span>       --->  <span class="text-color2">Wanna Chat?</span>',
   '<span class="text-colorWhite">gui</span>         --->  <span class="text-color2">Redirect to portfolio website</span>',
   '<span class="text-colorWhite">help</span>        --->  <span class="text-color2">You seem to understand this one</span>',
@@ -40,6 +41,7 @@ export const help = [
   '<span class="text-colorWhite">projects</span>    --->  <span class="text-color2">My work!</span>',
   '<span class="text-colorWhite">secret</span>      --->  <span class="text-color2">Do you have one too?</span>',
   '<span class="text-colorWhite">social</span>      --->  <span class="text-color2">Find me online</span>',
+  '<span class="text-colorWhite">theme</span>       --->  <span class="text-color2">Changes the theme! Type theme for a list of themes</span>',
   '<span class="text-colorWhite">tuxsay</span>      --->  <span class="text-color2">A random quote from our favorite Linux mascot</span>',
   '<span class="text-colorWhite">weather</span>     --->  <span class="text-color2">Your local weather</span>',
   '<span class="text-colorWhite">whoareyou</span>   --->  <span class="text-color2">Who is Jameson</span>',
@@ -88,6 +90,18 @@ export const sudo = [
   "<span class='text-color2'>But seriously... what did you expect?</span>",
   "<br>",
 ];
+
+export const themeHelp = [
+  "<br>",
+  "<span class='text-color2'>Type <span class='text-colorYellow'>'theme theme-name'</span> to change your theme! </span>",
+  "<br>",
+  "<span class='text-color2'>Available Themes: </span>",
+  '<span class="text-color2">Dark</span>',
+  '<span class="text-color2">Light</span>',
+  "<span class='text-color2'>.... working on a few more :)</span>",
+  // "<span class='text-color2'>Halcyon</span>",
+  "<br>",
+]
 
 export const tuxsay = [
 "         ________________         ",

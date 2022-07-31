@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/styles/textColors.scss";
+@import "./assets/styles/themes.scss";
 @font-face {
   font-family: "CascadiaCode";
   src: url("~assets/fonts/CascadiaCode.ttf") format("trueType");
@@ -28,7 +28,7 @@ html {
 body {
   font-family: "CascadiaCode", monospace;
   margin: 0;
-  background-color: black;
+  // background-color: black;
   color: #ffffff;
   overflow-x: hidden;
   width: 100vh;

@@ -8,6 +8,7 @@ import {
   secret,
   social,
   sudo,
+  themeHelp,
   tuxsay,
   whoareyou,
 } from "./commands";
@@ -18,7 +19,7 @@ import {
   getWeather,
   whoami,
 } from "../api/calls";
-import { echo } from "./terminalMethods";
+import { echo, changeTheme } from "./terminalMethods";
 
 // add the command to the commandsOutput array in TheTerminal.vue
 // for loop checks line[i] for spaces to make ascii art look correct
@@ -40,6 +41,9 @@ export const terminalSwitch = async (input, arr) => {
   } else if (input.includes("echo")) {
     echo(input, arr);
     input = "echo";
+  } else if (input.includes("theme") && input.split(" ").length > 1) {
+    changeTheme(input);
+    input = themeBreak;
   }
 
   switch (input) {
@@ -77,6 +81,9 @@ export const terminalSwitch = async (input, arr) => {
       sudoRedirect();
       break;
     case "theme":
+      add(themeHelp, arr);
+      break;
+    case "themeBreak":
       break;
     case "tuxsay":
       arr.push("<br />");

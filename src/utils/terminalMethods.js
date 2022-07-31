@@ -1,5 +1,4 @@
 export const saveHistory = (input, arr) => {
-  //incorporate localStorage? ehhh...
   if (input !== "") {
     const command = `<span class='text-colorWhite'>${input} </span>`;
 
@@ -47,7 +46,17 @@ export const echo = (input, arr) => {
   return arr;
 };
 
-export const changeTheme = () => {
-  // maybe worth it?
-  // at least one?
+export const changeTheme = (input) => {
+  const terminal = document.querySelector(".terminal");
+  const newPut = input.replace("theme", "").trim();
+
+  if (newPut === "dark") {
+    document.body.style.backgroundColor = "black";
+    terminal.classList.remove("light-mode");
+    terminal.classList.add("dark-mode");
+  } else if (newPut === "light") {
+    document.body.style.backgroundColor = "#d4d1d1";
+    terminal.classList.remove("dark-mode");
+    terminal.classList.add("light-mode");
+  }
 };
