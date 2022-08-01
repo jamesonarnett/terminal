@@ -28,7 +28,7 @@ html {
 body {
   font-family: "CascadiaCode", monospace;
   margin: 0;
-  // background-color: black;
+  background-color: black;
   color: #ffffff;
   overflow-x: hidden;
   width: 100vh;

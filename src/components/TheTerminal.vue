@@ -1,5 +1,4 @@
 <!-- Needs text animation, like a typewriter effect on text entry -->
-<!-- Changeable theme(s)? -->
 
 <template>
   <div class="terminal dark-mode" @click="textFocus">
