@@ -16,7 +16,7 @@
 
   .text-colorHelp {
     color: #795199;
-    text-shadow: 0 0 3px #795199;
+    text-shadow: 0 0 2px #795199;
   }
 
   .text-colorWhite {
@@ -41,7 +41,7 @@
 }
 
 .light-mode {
-  background-color: #d4d1d1;
+  background-color: #ffffff;
   color: #000000;
 
   #jShell::before {
@@ -58,7 +58,7 @@
 
   .text-colorHelp {
     color: #795199;
-    text-shadow: 0 0 3px #795199;
+    text-shadow: 0 0 2px #795199;
   }
 
   .text-colorWhite {
@@ -70,6 +70,48 @@
 
     a:visited {
       color: #363636;
+    }
+  }
+
+  .text-colorYellow {
+    color: #1596d1;
+  }
+
+  .text-colorGreen {
+    color: #519975;
+  }
+}
+
+.halcyon {
+  background-color: #1d2433;
+  color: #bae67e;
+
+  #jShell::before {
+    color: #ffae57;
+  }
+
+  .text-color1 {
+    color: #bae67e;
+  }
+
+  .text-color2 {
+    color: #ffd580;
+  }
+
+  .text-colorHelp {
+    color: #c3a6ff;
+    text-shadow: 0 0 2px #c3a6ff;
+  }
+
+  .text-colorWhite {
+    color: #ffd580;
+  }
+
+  .text-colorGrey {
+    color: #bae67e;
+
+    a:visited {
+      color: #a2aabc;
     }
   }
 

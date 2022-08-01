@@ -52,11 +52,15 @@ export const changeTheme = (input) => {
 
   if (newPut === "dark") {
     document.body.style.backgroundColor = "black";
-    terminal.classList.remove("light-mode");
+    terminal.classList.remove("light-mode", "halcyon");
     terminal.classList.add("dark-mode");
   } else if (newPut === "light") {
-    document.body.style.backgroundColor = "#d4d1d1";
-    terminal.classList.remove("dark-mode");
+    document.body.style.backgroundColor = "#ffffff";
+    terminal.classList.remove("dark-mode", "halcyon");
     terminal.classList.add("light-mode");
+  } else if (newPut === "halcyon") {
+    document.body.style.backgroundColor = "#1d2433";
+    terminal.classList.remove("dark-mode", "light-mode");
+    terminal.classList.add("halcyon");
   }
 };
