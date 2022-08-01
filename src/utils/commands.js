@@ -98,8 +98,8 @@ export const themeHelp = [
   "<span class='text-color2'>Available Themes: </span>",
   '<span class="text-color2">Dark</span>',
   '<span class="text-color2">Light</span>',
+  "<span class='text-color2'>Halcyon</span>",
   "<span class='text-color2'>.... working on a few more :)</span>",
-  // "<span class='text-color2'>Halcyon</span>",
   "<br>",
 ]
 
