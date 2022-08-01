@@ -75,22 +75,5 @@ export default {
 <style lang="scss">
 //static styles
 @import "../assets/styles/terminal.scss";
-
-.dark-mode {
-  background-color: black;
-  color: #ffffff;
-
-  #jShell::before {
-    color: #519975;
-  }
-}
-
-.light-mode {
-  background-color: #ffffff;
-  color: #000000;
-
-  #jShell::before {
-    color: #795199;
-  }
-}
+@import "../assets/styles/themes.scss";
 </style>
