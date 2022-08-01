@@ -123,3 +123,45 @@
     color: #519975;
   }
 }
+
+.monokai {
+  background-color: #242424;
+  color: #ffee99;
+
+  #jShell::before {
+    color: #d3201f;
+  }
+
+  .text-color1 {
+    color: #66d9ef;
+  }
+
+  .text-color2 {
+    color: #60cf30;
+  }
+
+  .text-colorHelp {
+    color: #c3a6ff;
+    text-shadow: 0 0 2px #c3a6ff;
+  }
+
+  .text-colorWhite {
+    color: #60cf30;
+  }
+
+  .text-colorGrey {
+    color: #66d9ef;
+
+    a:visited {
+      color: #a2aabc;
+    }
+  }
+
+  .text-colorYellow {
+    color: #f92672;
+  }
+
+  .text-colorGreen {
+    color: #519975;
+  }
+}

@@ -73,6 +73,5 @@ export default {
 
 <style lang="scss">
 //static styles
-@import "../assets/styles/terminal.scss";
-@import "../assets/styles/themes.scss";
+@import "./assets/styles/terminal.scss";
 </style>
