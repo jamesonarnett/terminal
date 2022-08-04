@@ -1,5 +1,3 @@
-<!-- Needs text animation, like a typewriter effect on text entry -->
-
 <template>
   <div class="terminal dark-mode" @click="textFocus">
     <transition-group name="type" class="text-color1" tag="div" appear>

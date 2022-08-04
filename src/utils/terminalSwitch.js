@@ -43,7 +43,7 @@ export const terminalSwitch = async (input, arr) => {
     input = "echo";
   } else if (input.includes("theme") && input.split(" ").length > 1) {
     changeTheme(input);
-    input = themeBreak;
+    input = "themeBreak";
   }
 
   switch (input) {
