@@ -1,5 +1,3 @@
-<!-- Needs text animation, like a typewriter effect on text entry -->
-
 <template>
   <div class="terminal dark-mode" @click="textFocus">
     <transition-group name="type" class="text-color1" tag="div" appear>
@@ -7,6 +5,7 @@
         v-html="command"
         v-for="command in commandOutput"
         :key="commandOutput.indexOf(command)"
+        class="slide-in-left"
       ></p>
     </transition-group>
     <textarea
@@ -74,4 +73,34 @@ export default {
 <style lang="scss">
 //static styles
 @import "../assets/styles/terminal.scss";
+
+.slide-in-left {
+  -webkit-animation: slide-in-left 250ms steps(1000) forwards;
+  animation: slide-in-left 250ms steps(1000) forwards;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 </style>
