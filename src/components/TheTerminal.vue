@@ -53,7 +53,7 @@ export default {
         this.commandOutput = [];
         setTimeout(() => {
           window.scrollTo(0, 0);
-        }, 100);
+        }, 300);
       } else if (this.cleanInput() === "history") {
         this.commandOutput.push(this.history.join("\n"));
         scrollTojShell(this.commandOutput);
