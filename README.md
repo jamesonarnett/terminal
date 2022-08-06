@@ -9,6 +9,7 @@ A project bootstrapped with create-vue-app, made in the style of a linux termina
 <ul> 
   <li>banner     --->  Display the banner</li>
   <li>clear      --->  Clear the terminal</li>
+  <li>echo       --->  Echos your input</li>
   <li>email      --->  Wanna Chat?</li>
   <li>gui        --->  A redirect to my portfolio website</li>
   <li>help       --->  You seem to understand this one</li>
@@ -17,6 +18,7 @@ A project bootstrapped with create-vue-app, made in the style of a linux termina
   <li>secret     --->  Do you have one too?</li>
   <li>social     --->  Find me online</li>
   <li>tuxsay     --->  A random quote from our favorite Linux mascot</li>
+  <li>theme      --->  Pick a color theme</li>
   <li>weather    --->  Your local weather forecast</li>
   <li>whoareyou  --->  Who is Jameson</li>
   <li>whoami     --->  Who are you</li>
@@ -25,6 +27,7 @@ A project bootstrapped with create-vue-app, made in the style of a linux termina
 <br />
 
 <img src="./imgs/terminal.png" alt="terminal index" width="800" height="400" />
+<img src="./imgs/halcyonTheme.png" alt="terminal index" width="800" height="400" />
 <img src="./imgs/terminalWeather.png" alt="terminal index" width="800" height="400" />
 
 ## Project setup
