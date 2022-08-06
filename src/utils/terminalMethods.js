@@ -52,19 +52,23 @@ export const changeTheme = (input) => {
 
   if (newPut === "dark") {
     document.body.style.backgroundColor = "black";
-    terminal.classList.remove("light-mode", "halcyon", "monokai");
+    terminal.classList.remove("light-mode", "halcyon", "monokai", "sop");
     terminal.classList.add("dark-mode");
   } else if (newPut === "light") {
     document.body.style.backgroundColor = "#ffffff";
-    terminal.classList.remove("dark-mode", "halcyon", "monokai");
+    terminal.classList.remove("dark-mode", "halcyon", "monokai", "sop");
     terminal.classList.add("light-mode");
   } else if (newPut === "halcyon") {
     document.body.style.backgroundColor = "#1d2433";
-    terminal.classList.remove("dark-mode", "light-mode", "monokai");
+    terminal.classList.remove("dark-mode", "light-mode", "monokai", "sop");
     terminal.classList.add("halcyon");
   } else if (newPut === "monokai") {
     document.body.style.backgroundColor = "#242424";
-    terminal.classList.remove("dark-mode", "light-mode", "halcyon");
+    terminal.classList.remove("dark-mode", "light-mode", "halcyon", "sop");
     terminal.classList.add("monokai");
+  } else if (newPut === "sop") {
+    document.body.style.backgroundColor = "#422b55";
+    terminal.classList.remove("dark-mode", "light-mode", "halcyon", "monokai");
+    terminal.classList.add("sop");
   }
 };

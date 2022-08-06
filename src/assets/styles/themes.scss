@@ -165,3 +165,46 @@
     color: #519975;
   }
 }
+
+// "Shades of Purple" S-O-P
+.sop {
+  background-color: #422b55;
+  color: #b362ff;
+
+  #jShell::before {
+    color: #ba83ee;
+  }
+
+  .text-color1 {
+    color: #b362ff;
+  }
+
+  .text-color2 {
+    color: #ffffff;
+  }
+
+  .text-colorHelp {
+    color: #9effff;
+    text-shadow: 0 0 2px #c3a6ff;
+  }
+
+  .text-colorWhite {
+    color: #ffffff;
+  }
+
+  .text-colorGrey {
+    color: #ac89fc;
+
+    a:visited {
+      color: #a2aabc;
+    }
+  }
+
+  .text-colorYellow {
+    color: #ad56fdf5;
+  }
+
+  .text-colorGreen {
+    color: #519975;
+  }
+}

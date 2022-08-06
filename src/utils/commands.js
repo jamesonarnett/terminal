@@ -100,6 +100,7 @@ export const themeHelp = [
   '<span class="text-color2">Light</span>',
   "<span class='text-color2'>Halcyon</span>",
   "<span class='text-color2'>Monokai</span>",
+  "<span class='text-color2'>Sop</span>",
   "<br>",
 ]
 
