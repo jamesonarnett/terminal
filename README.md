@@ -1,8 +1,7 @@
 # terminal || jShell
 
-Still working, but you can see my progress <a href="https://jamesonarnett.github.io/terminal/">here!</a>
-
-A project bootstrapped with create-vue-app, made in the style of a linux terminal.
+A terminal inspired project, bootstrapped with create-vue-app, and <br />
+made in the style of a linux terminal. Check it out <a href="https://jamesonarnett.github.io/terminal/">here!</a>
 
 ## List of Commands
 
