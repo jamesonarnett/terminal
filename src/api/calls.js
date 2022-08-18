@@ -65,7 +65,7 @@ export const guiRediect = () => {
 };
 
 export const sudoRedirect = () => {
-  const rickUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  const rickUrl = "https://www.youtube.com/watch?v=qPJuzB8CL8o";
   setTimeout(() => {
     window.open(rickUrl, "_blank");
   }, 1000);
