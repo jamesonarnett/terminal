@@ -12,7 +12,7 @@ echo $'\342\232\231' "${yellow}Working...${clear}" $'\342\232\231'
 
 # build
 git checkout gh-pages
-git pull origin main
+git merge main
 
 npm run build
 
