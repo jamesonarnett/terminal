@@ -38,7 +38,6 @@ export const help = [
   '<span class="text-colorWhite">gui</span>         --->  <span class="text-color2">Redirect to portfolio website</span>',
   '<span class="text-colorWhite">help</span>        --->  <span class="text-color2">You seem to understand this one</span>',
   '<span class="text-colorWhite">history</span>     --->  <span class="text-color2">Previous Commands Executed</span>',
-  '<span class="text-colorWhite">projects</span>    --->  <span class="text-color2">My work!</span>',
   '<span class="text-colorWhite">secret</span>      --->  <span class="text-color2">Do you have one too?</span>',
   '<span class="text-colorWhite">social</span>      --->  <span class="text-color2">Find me online</span>',
   '<span class="text-colorWhite">theme</span>       --->  <span class="text-color2">Changes the theme! Type theme for a list of themes</span>',
@@ -56,17 +55,17 @@ export const ls = [
 ];
 
 
-export const projects = [
-  "<br>",
-  "<span class='text-color2'>Projects: </span>",
-  "<span class='text-colorWhite'>Checkout my github ---> <a href='https://github.com/jamesonarnett/'" + "class='text-colorGrey'" + "target=_blank" + ">here</a></span>",
-  "<br>",
-  "<span class='text-color2'><a href='https://jamgamejam.herokuapp.com/'" + "class='text-colorGrey'" + "target=_blank" + ">JamGameJam</a> One of the first projects I ever made, all vanilla and a bit dated, but still a favorite</span>",
-  "<span class='text-color2'>PlaceholderProject2</span>",
-  "<span class='text-color2'>Project3</span>",
-  "<span class='text-color2'>And here is where I would put my trophy... IF I HAD ONE - Timmys Dad</span>",
-  "<br>",
-];
+// export const projects = [
+//   "<br>",
+//   "<span class='text-color2'>Projects: </span>",
+//   "<span class='text-colorWhite'>Checkout my github ---> <a href='https://github.com/jamesonarnett/'" + "class='text-colorGrey'" + "target=_blank" + ">here</a></span>",
+//   "<br>",
+//   "<span class='text-color2'><a href='https://jamgamejam.herokuapp.com/'" + "class='text-colorGrey'" + "target=_blank" + ">JamGameJam</a> One of the first projects I ever made, all vanilla and a bit dated, but still a favorite</span>",
+//   "<span class='text-color2'>PlaceholderProject2</span>",
+//   "<span class='text-color2'>Project3</span>",
+//   "<span class='text-color2'>And here is where I would put my trophy... IF I HAD ONE - Timmys Dad</span>",
+//   "<br>",
+// ];
 
 export const secret = [
   "<br>",
