@@ -13,7 +13,6 @@ made in the style of a linux terminal. Check it out <a href="https://jamesonarne
   <li>gui        --->  A redirect to my portfolio website</li>
   <li>help       --->  You seem to understand this one</li>
   <li>history    --->  Previous Commands Executed</li>
-<!--   <li>projects   --->  My work!</li> -->
   <li>secret     --->  Do you have one too?</li>
   <li>social     --->  Find me online</li>
   <li>tuxsay     --->  A random quote from our favorite Linux mascot</li>
