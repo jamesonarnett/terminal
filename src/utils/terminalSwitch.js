@@ -4,7 +4,6 @@ import {
   email,
   help,
   ls,
-  projects,
   secret,
   social,
   sudo,
@@ -67,9 +66,9 @@ export const terminalSwitch = async (input, arr) => {
     case "ls":
       add(ls, arr);
       break;
-    case "projects":
-      add(projects, arr);
-      break;
+    // case "projects":
+    //   add(projects, arr);
+    //   break;
     case "secret":
       add(secret, arr);
       break;
