@@ -38,6 +38,7 @@ export const help = [
   '<span class="text-colorWhite">gui</span>         --->  <span class="text-color2">Redirect to portfolio website</span>',
   '<span class="text-colorWhite">help</span>        --->  <span class="text-color2">You seem to understand this one</span>',
   '<span class="text-colorWhite">history</span>     --->  <span class="text-color2">Previous Commands Executed</span>',
+  '<span class="text-colorWhite">projects</span>    --->  <span class="text-color2">My work!</span>',
   '<span class="text-colorWhite">secret</span>      --->  <span class="text-color2">Do you have one too?</span>',
   '<span class="text-colorWhite">social</span>      --->  <span class="text-color2">Find me online</span>',
   '<span class="text-colorWhite">theme</span>       --->  <span class="text-color2">Changes the theme! Type theme for a list of themes</span>',
