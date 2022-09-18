@@ -38,7 +38,7 @@ export const help = [
   '<span class="text-colorWhite">gui</span>         --->  <span class="text-color2">Redirect to portfolio website</span>',
   '<span class="text-colorWhite">help</span>        --->  <span class="text-color2">You seem to understand this one</span>',
   '<span class="text-colorWhite">history</span>     --->  <span class="text-color2">Previous Commands Executed</span>',
-  '<span class="text-colorWhite">projects</span>    --->  <span class="text-color2">My work!</span>',
+  // '<span class="text-colorWhite">projects</span>    --->  <span class="text-color2">My work!</span>',
   '<span class="text-colorWhite">secret</span>      --->  <span class="text-color2">Do you have one too?</span>',
   '<span class="text-colorWhite">social</span>      --->  <span class="text-color2">Find me online</span>',
   '<span class="text-colorWhite">theme</span>       --->  <span class="text-color2">Changes the theme! Type theme for a list of themes</span>',
@@ -142,7 +142,7 @@ export const tuxsay = [
 export const whoareyou = [
   "<br>",
   "<span class='text-colorGrey'>Hey, I'm <span class='text-colorYellow'>Jameson</span></span>",
-  "<span class='text-colorGrey'>A computer science student (juniorwhoare) at Colorado State Global</span>",
+  "<span class='text-colorGrey'>A computer science student (junior) at Colorado State Global</span>",
   "<span class='text-colorGrey'>Here lately, I have been working primarily with </span>",
   "<span class='text-colorGrey'>JavaScript, and have also been studying Java and Spring 5 Framework.</span>",
   "<span class='text-colorGrey'>While Im fond of JS, I am always interested in learning something new.</span>",
